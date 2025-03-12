@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menú de navegación */
+nav {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #333 !important;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6f61 !important;
+    transform: scale(1.1);
+}
+
+/* Contenido principal */
+main {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* Modo Oscuro */
+.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header, .dark-mode footer, .dark-mode nav, .dark-mode main {
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+}
+
+.dark-mode .nav-link {
+    color: #ffffff !important;
+}
+
+.dark-mode .nav-link:hover {
+    color: #ffcc00 !important;
+}
